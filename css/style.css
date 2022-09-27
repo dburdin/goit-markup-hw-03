@@ -75,6 +75,9 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section-null {
+    padding-bottom: 0px;
+}
 
 .container {
     width: 1200px;
@@ -90,8 +93,7 @@ body {
 /* general styles */
 /* header styles */
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -129,6 +131,8 @@ body {
 }
 
 .site-nav .link {
+    padding: 32px 0;
+    display: block;
     color: var(--main-color);
     font-weight: 500;
     line-height: 1.14;
@@ -143,6 +147,8 @@ body {
 }
 
 .header-contacts .link {
+    padding: 32px 0;
+    display: block;
     color: var(--secondary-color);
     font-weight: 500;
     line-height: 1.14;
@@ -164,15 +170,16 @@ body {
 /* header styles */
 /* index main styles */
 .hero {
+    padding: 200px 0;
+
     background-color: var(--bg-color);
-    height: 600px;
     text-align: center;
 }
 
 .hero-title {
+    margin: 0 auto;
     margin-bottom: 30px;
-
-
+    max-width: 650px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -203,12 +210,6 @@ body {
 
 }
 
-/* -----------------Для центрування відносно бекграунду, потім буде видалений. Іншого способу не знайшов----------------------- */
-.temporary-padding-visual-center {
-    padding-top: 200px;
-}
-
-/* -----------------Для центрування відносно бекграунду, потім буде видалений. Іншого способу не знайшов----------------------- */
 .hero-button:hover,
 .hero-button:focus {
     background-color: #188CE8;
@@ -237,8 +238,6 @@ body {
 }
 
 .examples-list {
-    /* width: calc((100%-60px)/3); */
-
     display: flex;
     gap: 30px;
 }
@@ -266,13 +265,11 @@ body {
     gap: 30px;
 }
 .team-list .item { 
-    /* width: calc((100%-90)/4); */
-
-    /* Для ефекту рамки */
-    border-radius: 0 0 4px 4px; 
-    border-color: transparent;
-    border-style: solid;
-    /* Для ефекту рамки */
+    
+ box-shadow:    0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius:  0px 0px 4px 4px;
 }
 .item-container {
     padding-top: 30px;
@@ -289,16 +286,15 @@ body {
 /* index main styles */
 /* footer styles */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--bg-color);
 }
 .footer .logo {
     display: block;
     margin-bottom: 20px;
     margin-right: 0;
-}
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer .link {
@@ -334,6 +330,8 @@ body {
     margin-bottom: 50px;
 }
 .filter-button {
+    padding: 6px 22px;
+
     color: var(--main-color);
     background-color: #F5F4FA;
     font-weight: 500;
